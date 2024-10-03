@@ -2,31 +2,22 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "Gender Distribution of Death Statistics",
     "data": {
-      "url": "https://raw.githubusercontent.com/reneeyst23/FIT3179-Week-10/refs/heads/main/data/death_sex_ethnic_state.csv",
-      "format": { "type": "csv" }
+      "values": []  
     },
-    "transform": [
-      {
-        "filter": "datum.state === '' && datum.date === ''"
-      },
-      {
-        "aggregate": [{ "op": "sum", "field": "abs", "as": "total" }],
-        "groupby": ["sex"]
-      }
-    ],
     "encoding": {
       "theta": {
-         "field": "total", 
-         "type": "quantitative" 
-        },
-      "color": { 
-        "field": "sex", 
-        "type": "nominal", 
-        "scale": { "range": ["red", "blue"] } }
+        "field": "total",
+        "type": "quantitative"
+      },
+      "color": {
+        "field": "sex",
+        "type": "nominal",
+        "scale": { "range": ["red", "blue"] }
+      }
     },
     "layer": [
       {
-        "mark": { "type": "arc", "innerRadius": 50 }
+        "mark": { "type": "arc", "innerRadius": 70 }
       },
       {
         "mark": { "type": "text", "radiusOffset": -20 },
@@ -35,5 +26,4 @@
         }
       }
     ]
-}
-
+  }
