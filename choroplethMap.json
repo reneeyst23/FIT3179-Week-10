@@ -7,12 +7,12 @@
             }
         }
     },
-    "width": 800,
-    "height": 500,
+    "width": 650,
+    "height": 400,
     "projection": {
         "type": "equalEarth",
         "center": [109, 4.5],  
-        "scale": 2530
+        "scale": 2000
     },
     "layer": [
         {
