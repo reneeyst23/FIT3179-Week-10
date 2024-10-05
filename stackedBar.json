@@ -3,7 +3,6 @@
     "data": {"url": "https://raw.githubusercontent.com/reneeyst23/FIT3179-Week-10/refs/heads/main/data/death_sex_ethnic_state.csv"},
     "width": 500, "height": 250,
     "resolve": {"scale": {"color": "independent"}},
-    "mark": "bar",
     "params": [
         {
             "name": "state_selection",
@@ -105,7 +104,7 @@
                 "tooltip": [
                     {"field": "state", "type": "nominal", "title": "State"},
                     {"field": "gender", "type":"nominal", "title": "Gender"},
-                    {"field": "abs", "aggregate": "sum", "type": "quantitative", "title": "Number of Deaths"},
+                    {"field": "abs", "aggregate": "sum", "type": "quantitative", "title": "Number of Death"},
                     {"field": "year", "type": "ordinal", "title": "Year"}
                 ]
             }
